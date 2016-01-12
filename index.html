@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div id="calendar-container" class="large-6 columns">
+            <h2 class="text-center">Unallocated events</h2>
+            <div class="draggable-container" ondrop="app.drop(event)" ondragover="app.allowDrop(event)">
+<!--                 <div id="d1" class="draggable-event label" draggable="true" ondragstart="app.drag(event)">
+                    Samsung: Project X
+                </div>
+                <div id="d2" class="draggable-event label" draggable="true" ondragstart="app.drag(event)">
+                    Samsung: Project Y
+                </div>
+                <div id="d3" class="draggable-event label" draggable="true" ondragstart="app.drag(event)">
+                    Apple: Project A
+                </div> -->
+            </div>
+        </div>
+        <div id="projects-container" class="large-6 columns">
+            <h2 class="text-center">Projects</h2>
+                <div class="draggable-container" ondrop="app.drop(event)" ondragover="app.allowDrop(event)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js" type="text/javascript"></script>
+    <script src="static/js/app.js" type="text/javascript"></script>
+</body>

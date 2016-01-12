@@ -1,0 +1,15 @@
+div#calendar-container {
+    border-right: medium dashed ;
+}
+
+div.draggable-container {
+    min-height: 200px;
+    border: 1px solid red;
+}
+
+div.draggable-event {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    min-height: 50px;
+}
