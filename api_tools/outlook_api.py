@@ -12,8 +12,6 @@ class OutlookAPI(api_base.BaseAPI):
 
   def load_keys(self):
     self._app_id = settings.MS_APP_ID
-    with open(settings.MS_PRIVATE_KEY_FILE) as filep:
-      self._private_key = filep.read().strip()
 
   def get_authorization_url(self, redirect_url):
     params = {'client_id': self._app_id, 'redirect_uri': redirect_url,
