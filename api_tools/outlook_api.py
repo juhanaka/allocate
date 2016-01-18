@@ -11,10 +11,7 @@ class OutlookAPI(api_base.BaseAPI):
     super(OutlookAPI, self).__init__()
 
   def load_keys(self):
-    with open(settings.MS_APP_ID_FILE) as filep:
-      self._app_id = filep.read().strip()
-    with open(settings.MS_PASS_FILE) as filep:
-      self._pass = filep.read().strip()
+    self._app_id = settings.MS_APP_ID
     with open(settings.MS_PRIVATE_KEY_FILE) as filep:
       self._private_key = filep.read().strip()
 

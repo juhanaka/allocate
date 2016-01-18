@@ -14,5 +14,5 @@ def ms_login():
   return redirect(api.get_authorization_url('http://localhost:5000'))
 
 if __name__ == "__main__":
-  app.run()
+  app.run(debug=True)
 
